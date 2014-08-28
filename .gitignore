@@ -5,3 +5,10 @@ BugBeer.Dal/obj/
 BugBeer.Dal.Tests/obj/
 BugBeer.Common/obj/
 BugBeer.Common.Tests/obj/
+BugBeer.Api/bin/
+BugBeer.Api.Tests/obj/
+BugBeer.Api.Tests/bin/
+BugBeer.Dal/bin/
+BugBeer.Models/obj/
+BugBeer.Dal.Tests/bin/
+BugBeer.Models/bin/

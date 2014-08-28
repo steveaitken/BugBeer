@@ -30,16 +30,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zedit.Shanghai.Commons">
+      <HintPath>..\packages\Zedit.Shanghai.Commons.1.0\Zedit.Shanghai.Commons.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BugBeerRepository.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="BugBeerRepository`1.cs" />
+    <Compile Include="IBugBeerRepository.cs" />
+    <Compile Include="Mocks\MockBeerRepo.cs" />
+    <Compile Include="Mocks\MockBugBeerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BugBeer.Models\BugBeer.Models.csproj">
+      <Project>{4686aae6-be10-4846-b9b8-da6ac31e1d7b}</Project>
+      <Name>BugBeer.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
